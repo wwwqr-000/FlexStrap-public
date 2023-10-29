@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://wwwqr-000.github.io/FlexStrap-public/FlexStrap.js" defer></script>
+    <title>FlexStrap example</title>
+    <flexstrap>
+        <style-value><!-- You could delete this, the values are like these as default, but you can change the values to your own ones -->
+            <m1 val="320"><!--Mobile 1--></m1>
+            <m2 val="375"><!--Mobile 2--></m2>
+            <m3 val="425"><!--Mobile 3--></m3>
+            <t val="768"><!--Tablet--></t>
+            <l1 val="1024"><!--Laptop 1--></l1>
+            <l2 val="1440"><!--Laptop 2--></l2>
+            <hd4k val="2560"><!--4K screens--></hd4k>
+        </style-value>
+        <credits auth="by wwwqr-000"></credits>
+        <!--
+            You could use the following bool vars in JS:
+            (Gives true if window width is in the scope of the given value of that var)
+
+            is_m1
+            is_m2
+            is_m3
+            is_t
+            is_l1
+            is_l2
+            is_hd4k
+
+            Usage:
+
+            Give a element all the custom attributes with the desired class within it.
+            Resize the window of this example and you will see how it works exactly.
+
+            (If for example the width is 320, then the className within the m1 attribute of the target elements will apply to the default class of that element.);
+        -->
+    </flexstrap>
+</head>
+<body>
+    <div m1="a1 orange" m2="a1 black" m3="a1 green" t="a1 red" l1="a1 blue" l2="a1 purple" hd4k="a1 grey">
+        <div m1="a2 black" m2="a2 green" m3="a2 red" t="a2 orange" l1="a2 blue" l2="a2 purple" hd4k="a2 grey"></div>
+        <div m1="a2 black" m2="a2 green" m3="a2 red" t="a2 orange" l1="a2 blue" l2="a2 purple" hd4k="a2 grey"></div>
+    </div>
+</body>
+</html>
